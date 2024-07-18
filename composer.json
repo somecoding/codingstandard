@@ -29,9 +29,11 @@
         }
     },
     "scripts": {
-        "post-install-cmd": "Somecoding\\Codingstandard\\Installer::postInstallRun",
-        "post-update-cmd": "Somecoding\\Codingstandard\\Installer::postInstallRun",
-        "pre-update-cmd": "Somecoding\\Codingstandard\\Installer::cleanup"
+        "post-package-install": "Somecoding\\Codingstandard\\Installer::postInstallRun",
+        "post-package-update": "Somecoding\\Codingstandard\\Installer::postInstallRun",
+        "pre-package-install": "Somecoding\\Codingstandard\\Installer::cleanup",
+        "pre-package-update": "Somecoding\\Codingstandard\\Installer::cleanup",
+        "pre-package-uninstall": "Somecoding\\Codingstandard\\Installer::cleanup"
     },
     "config": {
         "allow-plugins": {
