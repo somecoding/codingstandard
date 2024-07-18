@@ -1,7 +1,7 @@
 {
     "name": "somecoding/codingstandard",
     "description": "This is the codingstandard of SomeCoding",
-    "type": "composer-plugin",
+    "type": "library",
     "authors": [
         {
             "name": "Dwarfex",
