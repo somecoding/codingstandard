@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "php": "^8.3",
+        "php": "*",
         "ergebnis/composer-normalize": "*",
         "ergebnis/phpstan-rules": "*",
         "php-parallel-lint/php-parallel-lint": "*",

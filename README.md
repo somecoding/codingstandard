@@ -1,16 +1,3 @@
 Require Dev this package in youre composer development.
-create a ".phpcstd.ini" in your main folder
+creates a ".phpcstd.ini" in your main folder with references to the definde PHP language level
 
-
-/vendor
-/src
-/random
-.phpcstd.ini
-
-
-add 
-"include=vendor/somecoding/codingstandard/config/"
-
-without qoutes
-
-run 
