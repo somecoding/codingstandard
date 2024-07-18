@@ -1,0 +1,36 @@
+{
+    "name": "somecoding/codingstandard",
+    "description": "This is the codingstandard of SomeCoding",
+    "type": "metapackage",
+    "authors": [
+        {
+            "name": "Dwarfex",
+            "email": "h.oelze@wemake-it.de"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "ergebnis/composer-normalize": "*",
+        "ergebnis/phpstan-rules": "*",
+        "php-parallel-lint/php-parallel-lint": "*",
+        "phpmd/phpmd": "*",
+        "phpstan/phpstan": "*",
+        "phpstan/phpstan-deprecation-rules": "*",
+        "phpstan/phpstan-mockery": "*",
+        "phpstan/phpstan-phpunit": "*",
+        "phpstan/phpstan-strict-rules": "*",
+        "spaceemotion/php-coding-standard": "dev-master",
+        "symplify/easy-coding-standard": "*",
+        "vimeo/psalm": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Somecoding\\Codingstandard\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
+    }
+}

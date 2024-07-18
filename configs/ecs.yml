@@ -1,0 +1,14 @@
+parameters:
+  sets:
+    - 'clean-code'
+    - 'dead-code'
+    - 'psr12'
+    - 'php70'
+    - 'php71'
+    - 'common'
+
+  line_ending: '\n'
+
+services:
+  PhpCsFixer\Fixer\PhpUnit\PhpUnitMethodCasingFixer:
+    case: 'snake_case'
