@@ -1,7 +1,7 @@
 {
     "name": "somecoding/codingstandard",
     "description": "This is the codingstandard of SomeCoding",
-    "type": "metapackage",
+    "type": "composer-plugin",
     "authors": [
         {
             "name": "Dwarfex",
@@ -28,9 +28,16 @@
             "Somecoding\\Codingstandard\\": "src/"
         }
     },
+    "scripts": {
+        "post-install-cmd": "Somecoding\\Codingstandard\\Installer::postInstallRun",
+        "pre-update-cmd": "Somecoding\\Codingstandard\\Installer::cleanup"
+    },
     "config": {
         "allow-plugins": {
             "ergebnis/composer-normalize": true
         }
+    },
+    "require-dev": {
+        "composer/composer": "^2.0"
     }
 }
